@@ -1,0 +1,8 @@
+{
+    "window.zoomLevel": 1,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "terminal.integrated.rendererType": "dom",
+
+}

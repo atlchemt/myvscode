@@ -1,0 +1,5 @@
+ms-vscode.cpptools
+austin.code-gnu-global
+twxs.cmake
+oderwat.indent-rainbow
+ms-python.python
