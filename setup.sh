@@ -2,10 +2,10 @@
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
-# Windows
-if [ -e %APPDATA%\Code\User ]; then
-    STR=%APPDATA%\Code\User
-    cd %APPDATA%\Code\User
+# Windows (cgwin)
+if [ -e $HOME/AppData/Roaming/Code/User ]; then
+    STR=$HOME/AppData/Roaming/Code/User
+    cd $HOME/AppData/Roaming/Code/User
 fi
 
 # Mac
@@ -22,13 +22,13 @@ fi
 
 if [ -e "$STR" ]; then
     if [ -e "$STR"/settings.json ]; then
-    mv -f settings.json settings.json.bak
+    mv -n "$STR"/settings.json "$STR"/settings.json.bak
     fi
     if [ -e "$STR"/keybindings.json ]; then
-    mv -f keybindings.json keybindings.json.bak
+    mv -n "$STR"/keybindings.json "$STR"/keybindings.json.bak
     fi
     if [ -e "$STR"/snippets ]; then
-    mv -f snippets snippets.bak
+    mv -n "$STR"/snippets "$STR"/snippets.bak
     fi
 
     cp $SCRIPT_DIR/settings.json "$STR"/
