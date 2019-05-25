@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
-# Windows (cgwin)
+# Windows
 if [ -e $HOME/AppData/Roaming/Code/User ]; then
     STR=$HOME/AppData/Roaming/Code/User
     cd $HOME/AppData/Roaming/Code/User
