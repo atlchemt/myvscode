@@ -49,5 +49,41 @@
 			"cv::destroyAllWindows();"
 		],
 		"description": "imshow set"
-    }
+	},
+	"for": {
+		"prefix": "for",
+		"body": [
+				"for(${1:type} ${2:index} = 0; ${2:index} < ${3:length}; ${2:index}++){",
+				"\t${0:}",
+				"}"
+				],
+		"description": "for"
+	},
+	"rfor": {
+		"prefix": "rfor",
+		"body": [
+				"for(auto& ${1:variable} : ${2:range}){",
+				"\t${0:}",
+				"}"
+				],
+		"description": "'range-based for"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+				"if(${1:true}){",
+				"\t${0:}",
+				"}"
+				],
+		"description": "if"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+				"while(${1:expression}){",
+				"\t${0:}",
+				"}"
+				],
+		"description": "while"
+	}
 }

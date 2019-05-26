@@ -3,3 +3,6 @@ austin.code-gnu-global
 twxs.cmake
 oderwat.indent-rainbow
 ms-python.python
+coenraads.bracket-pair-colorizer
+ms-ceintl.vscode-language-pack-ja
+pkief.material-icon-theme
