@@ -9,7 +9,7 @@ if [ -e $HOME/AppData/Roaming/Code/User ]; then
 fi
 
 # Mac
-if [ -e "$HOME/Library/Application\ Support/Code/User" ]; then
+if [ -e $HOME/Library/Application\ Support/Code/User ]; then
     STR=$HOME/Library/Application\ Support/Code/User
     cd $HOME/Library/Application\ Support/Code/User
 fi
